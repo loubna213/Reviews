@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f1f1f1;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .title {
+    position: relative;
+    text-transform: capitalize;
+    color: rgb(12, 12, 48);
+    font-size: 2em;
+    border-radius: 6px;
+    padding: 0.3em 0.5em;
+}
+.container .title::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: blue;
+}
+.container .reviewCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 50%;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 2em;
+}
+.container .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .reviewCard img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+.container .reviewCard .name {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+}
+.container .reviewCard .job {
+    text-transform: uppercase;
+    color: aqua;
+}
+.container .reviewCard .description {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.6;
+}
+.container .reviewCard .icon {
+    color: aqua;
+    font-size: 1.5em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+.container .btn {
+    padding: 0.3em;
+    color: aqua;
+    border: 1px solid aqua;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 1em 0.5em;
+    cursor: pointer;
+}
